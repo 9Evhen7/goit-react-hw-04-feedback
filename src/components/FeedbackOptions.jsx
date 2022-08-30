@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import { BtnContainer, Btn } from '../styles/feedbackOptionsStyles';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ onLeaveFeedback }) => {
+  const options = ['good', 'neutral', 'bad'];
   return (
     <BtnContainer>
       {options.map(option => {
